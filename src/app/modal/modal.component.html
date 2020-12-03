@@ -1,0 +1,26 @@
+<form nz-form [formGroup]="form">
+    <nz-form-item>
+      <nz-form-label  nzFor="firstName" nzRequired>First Name</nz-form-label>
+      <nz-form-control nzErrorTip="Please input first name!">
+        <input nz-input type="text" id="firstName" formControlName="firstName"/>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label  nzFor="lastName" nzRequired>Last Name</nz-form-label>
+        <nz-form-control nzErrorTip="Please input last name!">
+          <input nz-input type="text" id="lastName" formControlName="lastName"/>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label  nzFor="age" nzRequired>Age</nz-form-label>
+        <nz-form-control nzErrorTip="Please input correct age! (0-150)">
+          <input maxlength="3" nz-input type="number" id="age" formControlName="age"/>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label  nzRequired nzFor="email">E-mail</nz-form-label>
+        <nz-form-control nzErrorTip="E-mail is not valid!">
+          <input nz-input type="email" formControlName="email" id="email" />
+        </nz-form-control>
+      </nz-form-item>
+  </form>
